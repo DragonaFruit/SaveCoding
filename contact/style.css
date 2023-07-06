@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Roboto:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+HTML, body {
+    scroll-behavior: smooth;
+    background-color: rgb(49, 41, 41);
+}
+header {
+    width: 100%;
+    height: 50px;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.356);
+}
+nav h1 {
+    font-weight: 700;
+}
+nav h1 span {
+    font-weight: 400;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    border-bottom: 0px solid orangered;
+}
+nav ul li a:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.github {
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(82, 76, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.github p {
+    margin-top: 20px;
+}
+.github-button {
+    background-color:  rgb(228, 151, 123);
+}
+.youtube {
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(82, 76, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.youtube p {
+    margin-top: 20px;
+}
+.github-button {
+    background-color:  rgb(228, 151, 123);
+}
+.instagram {
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(82, 76, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.instagram p {
+    margin-top: 20px;
+}
+.github-button {
+    background-color: rgb(228, 151, 123);
+}
+.linkedin {
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(82, 76, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.linkedin p {
+    margin-top: 20px;
+}
+.github-button {
+    background-color:  rgb(228, 151, 123);
+}

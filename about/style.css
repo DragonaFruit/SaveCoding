@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+HTML {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(image/setengah-bulan.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav {
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    position: fixed;
+}
+nav h1 {
+    margin-left: 3rem;
+    cursor: pointer;
+}
+nav h1 span {
+    color: red;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+}
+nav ul li {
+    padding: 2rem;
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 2rem;
+}
+.sec-0 {
+    width: 100%;
+    height: 100vh;
+}
+.content1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content1 .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content1 .text h1 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 4px 6px rgba(0,0,0,.10);
+    animation: awal .8s ease-in-out;
+    transition-delay: calc(.2s * var(--u));
+}
+@keyframes awal {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+    100%{opacity: 1;
+    transform: scale(1);}
+}
+section {
+    width: 100%;
+    height: 100vh;
+}
+section .animate {
+    filter: blur(5px);
+    transition: .8s;
+}
+section.show-animate .animate {
+    filter: blur(0);
+}
+.sec-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+.sec-1 img {
+    width: 30%;
+    height: auto;
+    margin-left: 1rem;
+    filter: brightness(.9);
+    border-radius: 10px;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+.sec-1.show-animate img {
+    transform: translateX(0);
+    opacity: 1;
+}
+.sec-1 .animate {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec-1 .animate h1 {
+    text-align: left;
+    padding: .8rem;
+    font-size: 18px;
+    color: white;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+.sec-1.show-animate .animate h1 {
+    transform: translateX(0px);
+    opacity: 1;
+}
+.sec-1 button {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+.sec-1.show-animate button {
+    opacity: 1;
+    transform: translateX(0px);
+}
+#Contact {
+    width: 20%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: wheat;
+    color: black;
+    border: 2px solid white;
+    margin-left: 20rem;
+    transition: all .6s ease-in-out;
+}
+#Contact:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+}
+.sec-2 {
+    width: 100%;
+    height: 80vh;
+}
+.MySkill {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tMySkill {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    margin-top: 7rem;
+}
+.tMySkill h1 {
+    margin-top: 2rem;
+    font-size: 30px;
+    font-weight: 200px;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+.sec-2.show-animate .tMySkill h1 {
+    transform: translateY(0px);
+    opacity: 1;
+    color: white;
+}
+.MySkill img {
+    margin: 0px 2rem;
+    width: 20%;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateX(-500px);
+    transition-delay: calc(.2s * var(--i));
+}
+.sec-2.show-animate .MySkill img {
+    transform: translateX(0px);
+    opacity: 1;
+}
+.sec-3 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border-radius: 20px;
+    filter: blur(5px);
+    transform: translateY(200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease-in-out;
+}
+.sec-3.show-animate {
+    filter: blur(0px);
+}
+.sec-3 .imageProject {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    overflow-y: hidden;
+}
+.sec-3 .imageProject img {
+    margin: 0px 1rem;
+    width: 30%;
+    height: 40%;
+    border: 1px solid white;
+    opacity: 0;
+    transform: translateY(-500px);
+    transition-delay: calc(.2s * var(--i));
+}
+.sec-3.show-animate .imageProject img {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.hiddenAbout {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+}
+.hiddenAbout.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    background-color: black;
+}
+.box {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+.sd {
+    width: 38%;
+    height: 60%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5757;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.sd button {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 1rem;
+}
+.smp {
+    width: 38%;
+    height: 60%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5757;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.smp button {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 1rem;
+}
+.smk {
+    width: 38%;
+    height: 60%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5757;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+}

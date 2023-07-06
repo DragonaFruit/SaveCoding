@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/icongif.gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <title>About me</title>
+</head>
+<body>
+    <div class="navbar" id="Home">
+        <nav>
+            <h1 onclick="HomeButton()">Dragona<span>.</span></h1>
+            <img src="/SVG/Bars.svg" alt="" class="navbarbtn">
+            <img src="/SVG/X.svg" alt="" class="navbarbtnoff">
+            <ul class="HiddenNavBar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About" id="This">About more</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="sec-0">
+        <div class="content1">
+            <div class="text">
+                <h1 style="--i:1;">How</h1>
+                <h1 style="--i:2;">About</h1>
+                <h1 style="--i:3;">Me</h1>
+            </div>
+        </div>
+    </section>
+    <section class="sec-1">
+        <img src="/image/Fotoku.webp" alt="">
+        <div class="animate">
+            <h1>Hello! My name is Dio Satriawan. I am a 17-year-old student with a passion for basketball, music, and programming. I find great joy in playing basketball and embrace the challenges that this sport brings. Additionally, I have a deep love for music. I enjoy playing musical instruments and exploring various genres of music.</h1>
+            <h1>In addition to basketball and music, I am also interested in the field of programming. I find excitement and satisfaction in creating and solving code. I enjoy learning programming languages and using them to develop creative solutions through software development.</h1>
+            <h1>I believe that sports, music, and programming provide opportunities for self-expression, skill development, and the creation of something new. I enjoy engaging with like-minded individuals and am always open to learning new things on my journey.</h1>
+            <h1>I strive to continuously hone my skills in basketball, music, and programming, and I aim to share the joy and inspiration with others through my work. I am enthusiastic about exploring these fields further and hope to integrate all three of my interests in my future experiences.</h1>
+            <h1>Thank you for visiting my portfolio! I sincerely hope to contribute and make a positive impact through my journey in sports, music, and programming.</h1>
+            <button id="Contact" onclick="HiddenContact()">Contact me</button>
+        </div>
+    </section>
+    <section class="sec-2">
+        <div class="tMySkill">
+            <h1>programming language that I can work with</h1>
+        </div>
+        <div class="MySkill">
+            <img src="/icon/html.png" alt="" class="animate" style="--i:0;">
+            <img src="/icon/css.png" alt="" class="animate" style="--i:1;">
+            <img src="/icon/js.png" alt="" class="animate" style="--i:2;">
+            <img src="/icon/php.png" alt="" class="animate" style="--i:3;">
+            <img src="/icon/rjs.png" alt="" class="animate" style="--i:4;">
+        </div>
+    </section>
+    <section class="sec-3" id="Project">
+        <h1 class="animate" style="color: white;">These are some of my simple projects that I only make when I'm bored</h1>
+        <div class="imageProject">
+        <img src="" alt="" class="animate" style="--i:1">
+        <img src="" alt="" class="animate" style="--i:2"> 
+        <img src="" alt="" class="animate" style="--i:3">
+    </div>
+    </section>
+    <section class="hiddenAbout" id="About">
+        <h1 style="color: white;">Experiences</h1>
+        <div class="box">
+            <div class="sd">
+                <h1 style="color: white;">SDN 1 PALAAN</h1>
+                <h2 style="color: white;">here I started to be interested in the digital world but I couldn't go deep because I didn't have enough facilities</h2>
+                <button type="button" onclick="SD">Visit Scholl</button>
+            </div>
+            <div class="smp">
+                <h1 style="color: white;">SMPN 1 NGAJUM</h1>
+                <h2 style="color: white;">here I started to explore all about the digital world because I already have adequate facilities.</h2>
+                <button type="button" onclick="SMP">Visit Scholl</button>
+            </div>
+            <div class="smk">
+                <h1 style="color: white;">Coming Soon</h1>
+            </div>
+        </div>
+    </section>
+    <script src="/0111010/main.js"></script>
+</body>
+</html>

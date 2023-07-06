@@ -1,0 +1,112 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ HTML {
+    scroll-behavior: smooth;
+ }
+ :root {
+    --green: rgb(101, 207, 101);
+ }
+ #header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+      }
+  
+  #nav-bar {
+    border: 1px solid black;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  #header-img {
+    width: 80px;
+  }
+#nav-bar .nav-links {
+    display: flex;
+}
+.nav-links li {
+    list-style-type: none;
+
+}
+.nav-links li .nav-link {
+    text-decoration: none;
+    color: var(--green);
+    padding: 10px;
+    font-size: 20px;
+}
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(94, 91, 91);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section2 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(94, 91, 91);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section3 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(94, 91, 91);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+      #video {
+        width: 100%;
+        height: 400px;
+        src: url("path/to/video.mp4");
+      }
+  
+  
+      #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+  
+      #email {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+  
+      #submit {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+      }
+  
+      @media (max-width: 768px) {
+        #nav-bar {
+          flex-direction: column;
+          align-items: center;
+        }
+  
+        #email {
+          width: 100%;
+        }
+      }
